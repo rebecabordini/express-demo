@@ -1,5 +1,7 @@
 const FourHundredHandler = (req, res, next) => {
-  next(createError(404));
+  const error = new Error(`${req.url} Not found`);
+  error.status = 404;
+  next(error);
 };
 
 module.exports = FourHundredHandler;
