@@ -1,4 +1,4 @@
-const USERNAME = "Gustavo";
+const USERNAME = "Rebeca";
 
 const userHandler = (req, res, next) => {
   req.userName = USERNAME;
